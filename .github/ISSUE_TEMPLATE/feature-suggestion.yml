@@ -1,0 +1,46 @@
+name: Feature Suggestion
+description: Propose a product feature that improves research, comparison, or data transparency.
+title: "[Feature]: "
+labels:
+  - enhancement
+  - product-feedback
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What user problem are you trying to solve?
+      placeholder: As a user, I struggle to...
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the feature at a high level.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any workaround or alternative approach.
+    validations:
+      required: false
+  - type: dropdown
+    id: value
+    attributes:
+      label: Expected user value
+      options:
+        - Low
+        - Medium
+        - High
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Mockups, references, or examples.
+    validations:
+      required: false

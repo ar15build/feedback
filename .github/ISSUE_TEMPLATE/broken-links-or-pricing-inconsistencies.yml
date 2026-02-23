@@ -1,0 +1,57 @@
+name: Broken Link or Pricing Inconsistency
+description: Report dead product links, bad retailer redirects, or pricing mismatches.
+title: "[Link/Pricing]: "
+labels:
+  - retailer-data
+  - broken-link
+body:
+  - type: input
+    id: listing_url
+    attributes:
+      label: AR15.build listing URL
+      placeholder: https://ar15.build/...
+    validations:
+      required: true
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Issue type
+      options:
+        - Broken outbound link
+        - Redirects to wrong product
+        - Price mismatch
+        - Out-of-stock status mismatch
+        - Other retailer data issue
+    validations:
+      required: true
+  - type: input
+    id: retailer
+    attributes:
+      label: Retailer
+      placeholder: Example Retailer Name
+    validations:
+      required: true
+  - type: input
+    id: observed_value
+    attributes:
+      label: Observed value
+      description: Broken URL, shown price, or incorrect status.
+      placeholder: "$149.99 shown / 404 link"
+    validations:
+      required: true
+  - type: input
+    id: expected_value
+    attributes:
+      label: Expected value
+      description: Correct URL, current price, or actual availability.
+      placeholder: "$129.99 and in stock"
+    validations:
+      required: true
+  - type: textarea
+    id: proof
+    attributes:
+      label: Supporting details
+      description: Add screenshots, timestamps, and source URLs.
+      placeholder: Include when this was observed and in what region/currency if relevant.
+    validations:
+      required: true

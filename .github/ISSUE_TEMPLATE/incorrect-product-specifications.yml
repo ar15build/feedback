@@ -1,0 +1,72 @@
+name: Incorrect Product Specifications
+description: Report incorrect product dimensions, materials, compatibility tags, or technical attributes.
+title: "[Spec Error]: "
+labels:
+  - data-quality
+  - specs
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve AR15.build data quality.
+
+        This form is for product specification errors only.
+  - type: input
+    id: product_name
+    attributes:
+      label: Product name
+      description: Exact product name as shown on AR15.build.
+      placeholder: Example Manufacturer Model Name
+    validations:
+      required: true
+  - type: input
+    id: product_url
+    attributes:
+      label: Product page URL
+      description: Link to the affected AR15.build product page.
+      placeholder: https://ar15.build/...
+    validations:
+      required: true
+  - type: textarea
+    id: incorrect_fields
+    attributes:
+      label: Which specifications are incorrect?
+      description: List each field and the current incorrect value.
+      placeholder: |
+        - Barrel length: currently 14.5 in
+        - Material: currently 4140 steel
+    validations:
+      required: true
+  - type: textarea
+    id: correct_values
+    attributes:
+      label: What are the correct values?
+      description: Provide corrected values and source references.
+      placeholder: |
+        - Barrel length should be 16 in
+        - Material should be 4150 CMV
+        Sources:
+        - Manufacturer spec page: ...
+        - Datasheet PDF: ...
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Estimated impact
+      description: How broadly does this error affect users?
+      options:
+        - Low (minor display issue)
+        - Medium (could mislead purchasing)
+        - High (likely causes compatibility mistakes)
+    validations:
+      required: true
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Confirmations
+      options:
+        - label: I verified this is a data/specification issue (not a warranty, legal, or gunsmithing support request).
+          required: true
+        - label: I included at least one reliable source for the correction.
+          required: true

@@ -1,0 +1,49 @@
+name: Guide Correction or Clarification
+description: Suggest edits to improve accuracy or clarity in AR15.build guides.
+title: "[Guide]: "
+labels:
+  - guides
+  - documentation
+body:
+  - type: input
+    id: guide_title
+    attributes:
+      label: Guide title
+      placeholder: Name of the guide
+    validations:
+      required: true
+  - type: input
+    id: guide_url
+    attributes:
+      label: Guide URL
+      placeholder: https://ar15.build/...
+    validations:
+      required: true
+  - type: textarea
+    id: section
+    attributes:
+      label: Section needing correction
+      description: Quote or summarize the affected section.
+    validations:
+      required: true
+  - type: textarea
+    id: suggested_change
+    attributes:
+      label: Suggested correction or clarification
+      description: Provide concise replacement wording.
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why this change is needed
+      description: Explain factual correction, ambiguity, or missing context.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: I understand this repository does not provide legal advice or gunsmithing support.
+          required: true

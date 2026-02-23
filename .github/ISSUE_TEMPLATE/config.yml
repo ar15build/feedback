@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Manufacturer warranty or product support
+    url: https://ar15.build
+    about: For manufacturer-specific warranty questions, contact the brand directly.
+  - name: AR15.build platform homepage
+    url: https://ar15.build
+    about: General platform information and updates.

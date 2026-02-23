@@ -1,0 +1,56 @@
+name: Data Feed Anomaly
+description: Report suspicious importer/feed behavior, stale records, or malformed data batches.
+title: "[Data Feed]: "
+labels:
+  - data-feed
+  - investigation
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Data source or vendor
+      placeholder: Vendor/feed name
+    validations:
+      required: true
+  - type: input
+    id: affected_scope
+    attributes:
+      label: Affected scope
+      description: Product IDs, category, or date range if known.
+      placeholder: e.g., All BCG listings imported after 2026-02-20
+    validations:
+      required: true
+  - type: dropdown
+    id: anomaly_type
+    attributes:
+      label: Anomaly type
+      options:
+        - Missing records
+        - Duplicate records
+        - Malformed fields
+        - Stale/outdated data
+        - Unexpected deletions
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Observed behavior
+      description: Describe exactly what appears wrong.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Include sample IDs, snapshots, timestamps, and links.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should the feed or listing data show instead?
+    validations:
+      required: true

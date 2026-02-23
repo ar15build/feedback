@@ -1,0 +1,69 @@
+name: Compatibility Error or Mismatch
+description: Report products that are incorrectly marked as compatible or incompatible.
+title: "[Compatibility]: "
+labels:
+  - compatibility
+  - triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form when AR15.build compatibility logic appears incorrect.
+  - type: input
+    id: product_a
+    attributes:
+      label: Component A
+      placeholder: Manufacturer / Product name / URL
+    validations:
+      required: true
+  - type: input
+    id: product_b
+    attributes:
+      label: Component B
+      placeholder: Manufacturer / Product name / URL
+    validations:
+      required: true
+  - type: dropdown
+    id: observed_behavior
+    attributes:
+      label: What did the system indicate?
+      options:
+        - Marked compatible (but should be incompatible)
+        - Marked incompatible (but should be compatible)
+        - No compatibility result shown
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: What should the result be?
+      description: Explain expected compatibility outcome and why.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and references
+      description: Manufacturer docs, dimensions, standards, or trusted references.
+      placeholder: Include links and relevant measurements/specs.
+    validations:
+      required: true
+  - type: textarea
+    id: repro_steps
+    attributes:
+      label: Reproduction steps
+      description: How to reproduce this in AR15.build.
+      placeholder: |
+        1. Open ...
+        2. Select ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: This report is about platform compatibility data, not assembly instructions or gunsmithing advice.
+          required: true

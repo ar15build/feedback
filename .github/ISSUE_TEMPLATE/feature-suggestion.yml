@@ -5,6 +5,11 @@ labels:
   - enhancement
   - product-feedback
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Share ideas that improve research, comparison, compatibility clarity, or transparency.
+        Website: https://ar15.build
   - type: textarea
     id: problem
     attributes:

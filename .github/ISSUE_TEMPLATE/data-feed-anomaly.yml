@@ -5,6 +5,11 @@ labels:
   - data-feed
   - investigation
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for feed/import anomalies affecting AR15.build listings.
+        Website: https://ar15.build
   - type: input
     id: source
     attributes:

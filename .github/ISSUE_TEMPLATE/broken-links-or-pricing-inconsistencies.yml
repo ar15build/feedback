@@ -5,6 +5,11 @@ labels:
   - retailer-data
   - broken-link
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for retailer URL and pricing data issues.
+        Website: https://ar15.build
   - type: input
     id: listing_url
     attributes:

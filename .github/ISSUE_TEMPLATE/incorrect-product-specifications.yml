@@ -9,6 +9,7 @@ body:
     attributes:
       value: |
         Thanks for helping improve AR15.build data quality.
+        Website: https://ar15.build
 
         This form is for product specification errors only.
   - type: input

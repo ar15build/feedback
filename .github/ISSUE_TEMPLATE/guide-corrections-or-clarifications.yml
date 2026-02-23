@@ -5,6 +5,11 @@ labels:
   - guides
   - documentation
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to request corrections or clarifications in AR15.build guides.
+        Guides: https://ar15.build/guides
   - type: input
     id: guide_title
     attributes:

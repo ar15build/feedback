@@ -2,6 +2,8 @@
 
 [![Report an Issue](https://img.shields.io/badge/Report-an%20Issue-blue?style=for-the-badge)](../../issues/new/choose)
 
+Website: [https://ar15.build](https://ar15.build)
+
 This repository is the public feedback tracker for AR15.build.
 
 AR15.build is a configuration and comparison platform designed to help users research components, evaluate compatibility, and make informed purchasing decisions across multiple retailers.
@@ -24,6 +26,7 @@ All reports are reviewed and triaged.
 ## How to File Feedback
 
 When you click **New issue**, GitHub will present the available forms.
+Main site: [https://ar15.build](https://ar15.build)
 You can also review the templates directly:
 
 - [Incorrect Product Specifications](.github/ISSUE_TEMPLATE/incorrect-product-specifications.yml)

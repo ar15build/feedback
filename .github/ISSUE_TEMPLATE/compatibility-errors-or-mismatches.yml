@@ -9,6 +9,7 @@ body:
     attributes:
       value: |
         Use this form when AR15.build compatibility logic appears incorrect.
+        Website: https://ar15.build
   - type: input
     id: product_a
     attributes:

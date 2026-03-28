@@ -11,13 +11,6 @@ body:
         Use this form to request corrections or clarifications in AR15.build guides.
         Guides: https://ar15.build/guides
   - type: input
-    id: guide_title
-    attributes:
-      label: Guide title
-      placeholder: Name of the guide
-    validations:
-      required: true
-  - type: input
     id: guide_url
     attributes:
       label: Guide URL
@@ -27,28 +20,14 @@ body:
   - type: textarea
     id: section
     attributes:
-      label: Section needing correction
-      description: Quote or summarize the affected section.
+      label: What needs to change?
+      description: Quote or summarize the section that needs updating.
     validations:
       required: true
   - type: textarea
     id: suggested_change
     attributes:
-      label: Suggested correction or clarification
-      description: Provide concise replacement wording.
+      label: Suggested correction
+      description: Provide the corrected wording or explain what should be added or removed.
     validations:
       required: true
-  - type: textarea
-    id: rationale
-    attributes:
-      label: Why this change is needed
-      description: Explain factual correction, ambiguity, or missing context.
-    validations:
-      required: true
-  - type: checkboxes
-    id: confirmations
-    attributes:
-      label: Confirmations
-      options:
-        - label: I understand this repository does not provide legal advice or gunsmithing support.
-          required: true

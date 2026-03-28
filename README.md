@@ -19,7 +19,8 @@ Please use the appropriate issue form for:
 - Broken links or pricing inconsistencies
 - Guide corrections or clarification requests
 - Feature suggestions
-- Data feed anomalies
+- Product anomalies (missing, duplicated, or outdated listings)
+- Builder functional bugs (filters, search, configuration logic, UI behavior)
 
 All reports are reviewed and triaged.
 
@@ -34,7 +35,8 @@ You can also review the templates directly:
 - [Broken Link or Pricing Inconsistency](.github/ISSUE_TEMPLATE/broken-links-or-pricing-inconsistencies.yml)
 - [Guide Correction or Clarification](.github/ISSUE_TEMPLATE/guide-corrections-or-clarifications.yml)
 - [Feature Suggestion](.github/ISSUE_TEMPLATE/feature-suggestion.yml)
-- [Data Feed Anomaly](.github/ISSUE_TEMPLATE/data-feed-anomaly.yml)
+- [Product Anomaly](.github/ISSUE_TEMPLATE/product-anomaly.yml)
+- [Builder Bug](.github/ISSUE_TEMPLATE/builder-bug.yml)
 
 ## What This Repository Is Not For
 

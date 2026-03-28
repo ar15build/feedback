@@ -14,7 +14,7 @@ body:
     id: problem
     attributes:
       label: Problem to solve
-      description: What user problem are you trying to solve?
+      description: What are you trying to do that the site currently makes difficult or impossible?
       placeholder: As a user, I struggle to...
     validations:
       required: true
@@ -26,26 +26,9 @@ body:
     validations:
       required: true
   - type: textarea
-    id: alternatives
-    attributes:
-      label: Alternatives considered
-      description: Any workaround or alternative approach.
-    validations:
-      required: false
-  - type: dropdown
-    id: value
-    attributes:
-      label: Expected user value
-      options:
-        - Low
-        - Medium
-        - High
-    validations:
-      required: true
-  - type: textarea
     id: context
     attributes:
       label: Additional context
-      description: Mockups, references, or examples.
+      description: Mockups, examples, or anything else that might help.
     validations:
       required: false

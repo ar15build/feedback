@@ -1,0 +1,39 @@
+name: Product Anomaly
+description: Report a product that appears missing, duplicated, showing outdated info, or otherwise looks wrong.
+title: "[Product Anomaly]: "
+labels:
+  - data-quality
+  - investigation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form when a product on AR15.build looks wrong — missing, duplicated, showing old info, or otherwise off.
+        Website: https://ar15.build
+  - type: input
+    id: product_url
+    attributes:
+      label: Product or page URL
+      placeholder: https://ar15.build/...
+    validations:
+      required: false
+  - type: dropdown
+    id: anomaly_type
+    attributes:
+      label: What type of issue is it?
+      options:
+        - Conflicting data (e.g. image doesn't match title or description)
+        - Wrong category or miscategorized
+        - Product is missing from results
+        - Product appears duplicated
+        - Information looks outdated or stale
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What did you notice?
+      description: Describe what looks wrong. Include product names, links, or any other details that help.
+    validations:
+      required: true

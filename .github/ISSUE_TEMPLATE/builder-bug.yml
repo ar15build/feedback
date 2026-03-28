@@ -1,0 +1,53 @@
+name: Builder Bug
+description: Report a functional bug in the AR15.build builder tool (filters, search, configuration logic, UI behavior, etc.).
+title: "[Builder Bug]: "
+labels:
+  - bug
+  - builder
+  - triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to report bugs in the AR15.build builder — such as filters not working correctly, unexpected results, or broken UI behavior.
+        Website: https://ar15.build
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe what is broken and what you expected to happen instead.
+      placeholder: |
+        I set the Max Barrel Length filter to 20 and nearly all results disappeared.
+        I expected only items longer than 20" to be excluded.
+    validations:
+      required: true
+  - type: textarea
+    id: repro_steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the builder at https://ar15.build
+        2. Set the Max Barrel Length filter to 20
+        3. Observe that almost all results are removed
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Builder area affected
+      options:
+        - Filters (length, caliber, weight, etc.)
+        - Search / sorting
+        - Compatibility logic
+        - Product display or results list
+        - Configuration save / share
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Page URL (if applicable)
+      placeholder: https://ar15.build/...
+    validations:
+      required: false

@@ -36,35 +36,10 @@ body:
     validations:
       required: true
   - type: textarea
-    id: expected_behavior
-    attributes:
-      label: What should the result be?
-      description: Explain expected compatibility outcome and why.
-    validations:
-      required: true
-  - type: textarea
     id: evidence
     attributes:
-      label: Evidence and references
-      description: Manufacturer docs, dimensions, standards, or trusted references.
-      placeholder: Include links and relevant measurements/specs.
+      label: Why is this incorrect?
+      description: Explain the correct outcome and include any supporting references (manufacturer docs, dimensions, standards).
+      placeholder: These parts should be compatible because...
     validations:
       required: true
-  - type: textarea
-    id: repro_steps
-    attributes:
-      label: Reproduction steps
-      description: How to reproduce this in AR15.build.
-      placeholder: |
-        1. Open ...
-        2. Select ...
-        3. Observe ...
-    validations:
-      required: true
-  - type: checkboxes
-    id: confirmations
-    attributes:
-      label: Confirmations
-      options:
-        - label: This report is about platform compatibility data, not assembly instructions or gunsmithing advice.
-          required: true
